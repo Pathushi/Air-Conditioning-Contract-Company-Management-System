@@ -1,0 +1,940 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{63689ABE-0BB1-488D-A36E-BBD572317FEB}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Air_Conditioning_Contract_Company_Management_System</RootNamespace>
+    <AssemblyName>Air Conditioning Contract Company Management System</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="11_Accounting_Man_Dashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="11_Accounting_Man_Dashboard.Designer.cs">
+      <DependentUpon>11_Accounting_Man_Dashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="1_Admin_Dashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="1_Admin_Dashboard.Designer.cs">
+      <DependentUpon>1_Admin_Dashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Actor_Dashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Actor_Dashboard.Designer.cs">
+      <DependentUpon>Actor_Dashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Appointment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Appointment.Designer.cs">
+      <DependentUpon>Appointment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClientMeeting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClientMeeting.Designer.cs">
+      <DependentUpon>ClientMeeting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustoFeedbackmer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustoFeedbackmer.Designer.cs">
+      <DependentUpon>CustoFeedbackmer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomerDetails.Designer.cs">
+      <DependentUpon>CustomerDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerInvoice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomerInvoice.Designer.cs">
+      <DependentUpon>CustomerInvoice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerPayDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomerPayDetails.Designer.cs">
+      <DependentUpon>CustomerPayDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerPayment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomerPayment.Designer.cs">
+      <DependentUpon>CustomerPayment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerRegistration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomerRegistration.Designer.cs">
+      <DependentUpon>CustomerRegistration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="8_Electrical_Eng_Dashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="8_Electrical_Eng_Dashboard.Designer.cs">
+      <DependentUpon>8_Electrical_Eng_Dashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EmloyeeDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmloyeeDetails.Designer.cs">
+      <DependentUpon>EmloyeeDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EmpPerformance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmpPerformance.Designer.cs">
+      <DependentUpon>EmpPerformance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EmpRegistration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmpRegistration.Designer.cs">
+      <DependentUpon>EmpRegistration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Equipments.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Equipments.Designer.cs">
+      <DependentUpon>Equipments.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EventsMeetings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EventsMeetings.Designer.cs">
+      <DependentUpon>EventsMeetings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ExMeeting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ExMeeting.Designer.cs">
+      <DependentUpon>ExMeeting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ExpenceReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ExpenceReport.Designer.cs">
+      <DependentUpon>ExpenceReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="2_FrontOfficer_Dashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="2_FrontOfficer_Dashboard.Designer.cs">
+      <DependentUpon>2_FrontOfficer_Dashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form3.Designer.cs">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GRN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GRN.Designer.cs">
+      <DependentUpon>GRN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="9_HR_Man_Dashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="9_HR_Man_Dashboard.Designer.cs">
+      <DependentUpon>9_HR_Man_Dashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IncomeReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IncomeReport.Designer.cs">
+      <DependentUpon>IncomeReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="3_InstallationTec_Dashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="3_InstallationTec_Dashboard.Designer.cs">
+      <DependentUpon>3_InstallationTec_Dashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InstallAppointment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InstallAppointment.Designer.cs">
+      <DependentUpon>InstallAppointment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InstallationIssues.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InstallationIssues.Designer.cs">
+      <DependentUpon>InstallationIssues.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InstallationReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InstallationReport.Designer.cs">
+      <DependentUpon>InstallationReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InstallTechResource.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InstallTechResource.Designer.cs">
+      <DependentUpon>InstallTechResource.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inventory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventory.Designer.cs">
+      <DependentUpon>Inventory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ItemRegistration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ItemRegistration.Designer.cs">
+      <DependentUpon>ItemRegistration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MarketingCampaign.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MarketingCampaign.Designer.cs">
+      <DependentUpon>MarketingCampaign.cs</DependentUpon>
+    </Compile>
+    <Compile Include="5_Marketing_Manager_Dashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="5_Marketing_Manager_Dashboard.Designer.cs">
+      <DependentUpon>5_Marketing_Manager_Dashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MarketingMeterial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MarketingMeterial.Designer.cs">
+      <DependentUpon>MarketingMeterial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MarketingPerformance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MarketingPerformance.Designer.cs">
+      <DependentUpon>MarketingPerformance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MonitorSystem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MonitorSystem.Designer.cs">
+      <DependentUpon>MonitorSystem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MonthlSalesReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MonthlSalesReport.Designer.cs">
+      <DependentUpon>MonthlSalesReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NewCalendar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewCalendar.Designer.cs">
+      <DependentUpon>NewCalendar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Order.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Order.Designer.cs">
+      <DependentUpon>Order.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Payroll.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Payroll.Designer.cs">
+      <DependentUpon>Payroll.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="7_Project_Eng_Dashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="7_Project_Eng_Dashboard.Designer.cs">
+      <DependentUpon>7_Project_Eng_Dashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProjectEngineerReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProjectEngineerReport.Designer.cs">
+      <DependentUpon>ProjectEngineerReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProjectProposals.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProjectProposals.Designer.cs">
+      <DependentUpon>ProjectProposals.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Projects.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Projects.Designer.cs">
+      <DependentUpon>Projects.cs</DependentUpon>
+    </Compile>
+    <Compile Include="6_Project_Sales_Man_Dashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="6_Project_Sales_Man_Dashboard.Designer.cs">
+      <DependentUpon>6_Project_Sales_Man_Dashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProjectSchedule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProjectSchedule.Designer.cs">
+      <DependentUpon>ProjectSchedule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="4_QA_Mnager_Dashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="4_QA_Mnager_Dashboard.Designer.cs">
+      <DependentUpon>4_QA_Mnager_Dashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QualityControl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QualityControl.Designer.cs">
+      <DependentUpon>QualityControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RequestItem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RequestItem.Designer.cs">
+      <DependentUpon>RequestItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ServiceRequest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ServiceRequest.Designer.cs">
+      <DependentUpon>ServiceRequest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SocailMediaAccount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SocailMediaAccount.Designer.cs">
+      <DependentUpon>SocailMediaAccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="10_Stock_Man_Dashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="10_Stock_Man_Dashboard.Designer.cs">
+      <DependentUpon>10_Stock_Man_Dashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SuplplierPayDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SuplplierPayDetails.Designer.cs">
+      <DependentUpon>SuplplierPayDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SupplierPayment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SupplierPayment.Designer.cs">
+      <DependentUpon>SupplierPayment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SupplierReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SupplierReport.Designer.cs">
+      <DependentUpon>SupplierReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TechnicalDesign.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TechnicalDesign.Designer.cs">
+      <DependentUpon>TechnicalDesign.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TechnicalResource.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TechnicalResource.Designer.cs">
+      <DependentUpon>TechnicalResource.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TechnicalUseage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TechnicalUseage.Designer.cs">
+      <DependentUpon>TechnicalUseage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl1.Designer.cs">
+      <DependentUpon>UserControl1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlblank.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlblank.Designer.cs">
+      <DependentUpon>UserControlblank.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlDays.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlDays.Designer.cs">
+      <DependentUpon>UserControlDays.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WarrantyClaim.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WarrantyClaim.Designer.cs">
+      <DependentUpon>WarrantyClaim.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="11_Accounting_Man_Dashboard.resx">
+      <DependentUpon>11_Accounting_Man_Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="1_Admin_Dashboard.resx">
+      <DependentUpon>1_Admin_Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Actor_Dashboard.resx">
+      <DependentUpon>Actor_Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Appointment.resx">
+      <DependentUpon>Appointment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClientMeeting.resx">
+      <DependentUpon>ClientMeeting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustoFeedbackmer.resx">
+      <DependentUpon>CustoFeedbackmer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomerDetails.resx">
+      <DependentUpon>CustomerDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomerInvoice.resx">
+      <DependentUpon>CustomerInvoice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomerPayDetails.resx">
+      <DependentUpon>CustomerPayDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomerPayment.resx">
+      <DependentUpon>CustomerPayment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomerRegistration.resx">
+      <DependentUpon>CustomerRegistration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="8_Electrical_Eng_Dashboard.resx">
+      <DependentUpon>8_Electrical_Eng_Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmloyeeDetails.resx">
+      <DependentUpon>EmloyeeDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmpPerformance.resx">
+      <DependentUpon>EmpPerformance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmpRegistration.resx">
+      <DependentUpon>EmpRegistration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Equipments.resx">
+      <DependentUpon>Equipments.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EventsMeetings.resx">
+      <DependentUpon>EventsMeetings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExMeeting.resx">
+      <DependentUpon>ExMeeting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExpenceReport.resx">
+      <DependentUpon>ExpenceReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="2_FrontOfficer_Dashboard.resx">
+      <DependentUpon>2_FrontOfficer_Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form3.resx">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GRN.resx">
+      <DependentUpon>GRN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="9_HR_Man_Dashboard.resx">
+      <DependentUpon>9_HR_Man_Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IncomeReport.resx">
+      <DependentUpon>IncomeReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="3_InstallationTec_Dashboard.resx">
+      <DependentUpon>3_InstallationTec_Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InstallAppointment.resx">
+      <DependentUpon>InstallAppointment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InstallationIssues.resx">
+      <DependentUpon>InstallationIssues.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InstallationReport.resx">
+      <DependentUpon>InstallationReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InstallTechResource.resx">
+      <DependentUpon>InstallTechResource.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventory.resx">
+      <DependentUpon>Inventory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ItemRegistration.resx">
+      <DependentUpon>ItemRegistration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MarketingCampaign.resx">
+      <DependentUpon>MarketingCampaign.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="5_Marketing_Manager_Dashboard.resx">
+      <DependentUpon>5_Marketing_Manager_Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MarketingMeterial.resx">
+      <DependentUpon>MarketingMeterial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MarketingPerformance.resx">
+      <DependentUpon>MarketingPerformance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MonitorSystem.resx">
+      <DependentUpon>MonitorSystem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MonthlSalesReport.resx">
+      <DependentUpon>MonthlSalesReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewCalendar.resx">
+      <DependentUpon>NewCalendar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Order.resx">
+      <DependentUpon>Order.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Payroll.resx">
+      <DependentUpon>Payroll.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="7_Project_Eng_Dashboard.resx">
+      <DependentUpon>7_Project_Eng_Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProjectEngineerReport.resx">
+      <DependentUpon>ProjectEngineerReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProjectProposals.resx">
+      <DependentUpon>ProjectProposals.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Projects.resx">
+      <DependentUpon>Projects.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="6_Project_Sales_Man_Dashboard.resx">
+      <DependentUpon>6_Project_Sales_Man_Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProjectSchedule.resx">
+      <DependentUpon>ProjectSchedule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="4_QA_Mnager_Dashboard.resx">
+      <DependentUpon>4_QA_Mnager_Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QualityControl.resx">
+      <DependentUpon>QualityControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RequestItem.resx">
+      <DependentUpon>RequestItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ServiceRequest.resx">
+      <DependentUpon>ServiceRequest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SocailMediaAccount.resx">
+      <DependentUpon>SocailMediaAccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="10_Stock_Man_Dashboard.resx">
+      <DependentUpon>10_Stock_Man_Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SuplplierPayDetails.resx">
+      <DependentUpon>SuplplierPayDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SupplierPayment.resx">
+      <DependentUpon>SupplierPayment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SupplierReport.resx">
+      <DependentUpon>SupplierReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TechnicalDesign.resx">
+      <DependentUpon>TechnicalDesign.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TechnicalResource.resx">
+      <DependentUpon>TechnicalResource.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TechnicalUseage.resx">
+      <DependentUpon>TechnicalUseage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl1.resx">
+      <DependentUpon>UserControl1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlblank.resx">
+      <DependentUpon>UserControlblank.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlDays.resx">
+      <DependentUpon>UserControlDays.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WarrantyClaim.resx">
+      <DependentUpon>WarrantyClaim.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\group.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-item-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-user-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gear.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-service-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\monitor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\support.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-air-conditioner-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add-user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-update-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-delete-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-update-501.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-delete-501.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-item-501.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-update-502.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-add-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-delete-502.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add-user1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-update-503.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-delete-503.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-add-501.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-update-504.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-delete-504.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-add-502.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-update-505.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-delete-505.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-add-503.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-update-506.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-delete-506.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menu1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calendar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-request-service-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\profiles.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\feedback.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\payment.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\invoice.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\power.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-add-504.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-update-507.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-delete-507.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-add-505.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-update-508.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-delete-508.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\printer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\printer %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-add-506.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-add-507.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-update-509.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-delete-509.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menu2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\schedule %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calendar1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-service-501.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-request-service-501.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\power1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\send.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\quality.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\profiles1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\back-button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\social-media.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bullhorn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\monitor1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\profiles2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\schedule %281%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\support1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\profiles3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\monitor2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\profiles4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\profiles5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\profiles6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\salary.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\monitor3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\checkout.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\payment1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wirte.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\payment2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wirte1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wirte2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\manual.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\low-income.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\expenses.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calculator.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\view.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\printer1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\printer_3022251.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\printer_30222511.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\printer_30222512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calculator_12023876.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\view1.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
